@@ -32,6 +32,7 @@ public class PosicionRestController {
 	@Autowired
 	ISateliteService  sateliteService;
 	
+	/*Lista todos los satelites que se encuentran en la triangulacion*/
 	@GetMapping("/listSatellites")
 	public List<CoordenadaSatelites> listSatelites(){
 		return sateliteService.listCoordSatelites();
